@@ -32,7 +32,7 @@ module.exports = {
                 const embedHelp = new Discord.MessageEmbed()
                 .setTitle('Valios - Help Command - Help')
                 .setDescription(`**${prefix}help**`)
-                .addField('Description', 'A command that can be used to another command\'s use')
+                .addField('Description', 'A command that can be used to find another command\'s use')
                 .addField('Usage', `${prefix}help <command>`)
                 .setColor(0x28D69F)
                 .setThumbnail('https://i.imgur.com/041f3zv.png')
