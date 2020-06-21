@@ -4,9 +4,11 @@ let ver = process.env.NODE_ENV;
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = '.';
+const name = 'Valiuos';
 const fs = require('fs');
 
 global.prefix = prefix;
+global.name = name;
 
 client.commands = new Discord.Collection();
 
