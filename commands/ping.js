@@ -6,7 +6,7 @@ module.exports = {
     description: 'pong!',
     execute(message, args){
         const embed = new Discord.MessageEmbed()
-        .setTitle('Valios - Ping')
+        .setTitle('Valiuos - Ping')
         .setDescription('Pong!')
         .setColor(0x28D69F)
         .setThumbnail('https://i.imgur.com/8kK5AKY.png')
