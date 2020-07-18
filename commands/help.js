@@ -11,7 +11,7 @@ module.exports = {
             .setTitle('Valiuos - Help Command')
             .setDescription(`Use \`${prefix}help <command>\` to get help with a specific command`)
             .addField(':jigsaw: - General Commands', `\`help\``)
-            .addField(':tools: - Moderation Commands', ' - COMING SOON - ')
+            .addField(':tools: - Moderation Commands', '`\`clear\``')
             .addField(':ping_pong: - Fun Commands', `\`ping\``)
             .setColor(0x28D69F)
             .setThumbnail('https://i.imgur.com/041f3zv.png')
@@ -37,6 +37,16 @@ module.exports = {
                 .setColor(0x28D69F)
                 .setThumbnail('https://i.imgur.com/041f3zv.png')
                 message.channel.send(embedHelp);
+            break;
+            case "clear":
+                const embedClear = new Discord.MessageEmbed()
+                .setTitle('Valiuos - Help Command - Clear')
+                .setDescription(`**${prefix}clear**`)
+                .addField('Description', 'A command that can be used by a moderator to remove a bulk amount of messages')
+                .addField('Usage', `${prefix}clear <integer>`)
+                .setColor(0x28D69F)
+                .setThumbnail('https://i.imgur.com/041f3zv.png')
+                message.channel.send(embedClear);
             break;
             }
         }

@@ -27,6 +27,9 @@ client.on('message', message => {
         case "help":
             client.commands.get('help').execute(message, args);
         break;
+        case "clear":
+            client.commands.get('clear').execute(message, args);
+        break;
     }
 })
 
