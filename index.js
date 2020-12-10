@@ -30,6 +30,12 @@ client.on('message', message => {
         case "clear":
             client.commands.get('clear').execute(message, args);
         break;
+        case "ban":
+            client.commands.get('ban').execute(message, args);
+        break;
+        case "kick":
+            client.commands.get('kick').execute(message, args);
+        break;
     }
 })
 
