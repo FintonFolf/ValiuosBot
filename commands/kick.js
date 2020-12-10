@@ -11,7 +11,7 @@ module.exports = {
                 .setTitle('Valiuos - Kick - Missing User')
                 .setDescription('You must specify the user you wish to kick.')
                 .setColor(0x28D69F)
-                .setThumbnail('https://i.imgur.com/ry5hJqC.png')
+                .setThumbnail('https://i.imgur.com/PJMcwrG.png')
                 message.channel.send(embed);
             }
             else {
@@ -27,14 +27,14 @@ module.exports = {
                         .setTitle('Valiuos - Kick')
                         .setDescription('The user ' + args[1] + ' has been kicked from the server.')
                         .setColor(0x28D69F)
-                        .setThumbnail('https://i.imgur.com/ry5hJqC.png')
+                        .setThumbnail('https://i.imgur.com/PJMcwrG.png')
                         message.channel.send(embed);
                     } else {
                         const embed = new Discord.MessageEmbed()
                         .setTitle('Valiuos - Kick - Elevated User')
                         .setDescription('This user can not be kicked due to their elevated permissions.')
                         .setColor(0x28D69F)
-                        .setThumbnail('https://i.imgur.com/ry5hJqC.png')
+                        .setThumbnail('https://i.imgur.com/PJMcwrG.png')
                         message.channel.send(embed);
                     
                     }
@@ -43,7 +43,7 @@ module.exports = {
                     .setTitle('Valiuos - Kick - Invalid User')
                     .setDescription('You must specify the user you wish to kick.')
                     .setColor(0x28D69F)
-                    .setThumbnail('https://i.imgur.com/ry5hJqC.png')
+                    .setThumbnail('https://i.imgur.com/PJMcwrG.png')
                     message.channel.send(embed);
                 }
             }
@@ -52,7 +52,7 @@ module.exports = {
             .setTitle('Valiuos - Kick - Missing Permissions')
             .setDescription('You are missing the permissions to be eligible to run this command.')
             .setColor(0x28D69F)
-            .setThumbnail('https://i.imgur.com/ry5hJqC.png')
+            .setThumbnail('https://i.imgur.com/PJMcwrG.png')
             message.channel.send(embed);
         }
     }
