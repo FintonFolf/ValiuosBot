@@ -4,7 +4,7 @@ const { executionAsyncResource } = require('async_hooks');
 module.exports = {
     name: 'roll',
     description: 'dice roll.',
-    async execute(message, args){
+    async execute(client, message, args){
         const rollDice = () => Math.floor(Math.random() * 6) + 1;
         switch (rollDice()) {
             case 1:

@@ -4,7 +4,7 @@ const { executionAsyncResource } = require('async_hooks');
 module.exports = {
     name: 'ping',
     description: 'pong!',
-    async execute(message, args){
+    async execute(client, message, args){
         const embed = new Discord.MessageEmbed()
         .setTitle('Valiuos - Ping')
         .setDescription('Pong!')

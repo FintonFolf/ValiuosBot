@@ -4,9 +4,12 @@ let ver = process.env.NODE_ENV;
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = '.';
+const owner = '214843390863343616';
 const fs = require('fs');
 
 global.prefix = prefix;
+global.owner = owner;
+global.client = client;
 
 client.commands = new Discord.Collection();
 
@@ -22,28 +25,34 @@ client.on('message', message => {
 
     switch (args[0]) {
         case "ping":
-            client.commands.get('ping').execute(message, args);
+            client.commands.get('ping').execute(client, message, args);
         break;
         case "help":
-            client.commands.get('help').execute(message, args);
+            client.commands.get('help').execute(client, message, args);
         break;
         case "clear":
-            client.commands.get('clear').execute(message, args);
+            client.commands.get('clear').execute(client, message, args);
         break;
         case "ban":
-            client.commands.get('ban').execute(message, args);
+            client.commands.get('ban').execute(client, message, args);
         break;
         case "kick":
-            client.commands.get('kick').execute(message, args);
+            client.commands.get('kick').execute(client, message, args);
         break;
         case "8ball":
-            client.commands.get('8ball').execute(message, args);
+            client.commands.get('8ball').execute(client, message, args);
         break;
         case "roll":
-            client.commands.get('roll').execute(message, args);
+            client.commands.get('roll').execute(client, message, args);
         break;
         case "coinflip":
-            client.commands.get('coinflip').execute(message, args);
+            client.commands.get('coinflip').execute(client, message, args);
+        break;
+        case "shutdown":
+            client.commands.get('shutdown').execute(client, message, args);
+        break;
+        case "guilds":
+            client.commands.get('guilds').execute(client, client, message, args);
         break;
     }
 })

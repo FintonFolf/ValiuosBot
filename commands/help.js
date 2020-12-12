@@ -5,7 +5,7 @@ const prefix = global.prefix;
 module.exports = {
     name: 'help',
     description: 'sends help dialogue',
-    async execute(message, args){
+    async execute(client, message, args){
         if(!args[1]) {
             const embed = new Discord.MessageEmbed()
             .setTitle('Valiuos - Help Command')

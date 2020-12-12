@@ -4,7 +4,7 @@ const { executionAsyncResource } = require('async_hooks');
 module.exports = {
     name: '8ball',
     description: '8ball',
-    async execute(message, args){
+    async execute(client, message, args){
         if (!args[1]) {
             const embed = new Discord.MessageEmbed()
             .setTitle('Valiuos - 8 Ball - Missing Question')
@@ -37,7 +37,7 @@ module.exports = {
              ]
              let questionAnswer = questionResponse[Math.floor(Math.random()*questionResponse.length-1)]
              const embed = new Discord.MessageEmbed()
-            .setTitle('Valiuos - 8 Ball - Response')
+            .setTitle('Valiuos - 8 Ball')
             .setDescription('The eight ball has responded with \"' + questionAnswer + '\".')
             .setColor(0x28D69F)
             .setThumbnail('https://i.imgur.com/1Zy6Sag.png')

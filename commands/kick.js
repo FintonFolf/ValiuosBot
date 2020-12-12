@@ -4,7 +4,7 @@ const { executionAsyncResource } = require('async_hooks');
 module.exports = {
     name: 'kick',
     description: 'kicks user',
-    async execute(message, args){
+    async execute(client, message, args){
         if(message.member.permissions.has('KICK_MEMBERS')){
             if(!args[1]) {
                 const embed = new Discord.MessageEmbed()
