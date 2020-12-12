@@ -12,7 +12,7 @@ module.exports = {
             .setDescription(`Use \`${prefix}help <command>\` to get help with a specific command`)
             .addField(':jigsaw: - General Commands',  '\`help\`')
             .addField(':tools: - Moderation Commands', '`\`clear\`` `\`kick\`` `\`ban\``')
-            .addField(':ping_pong: - Fun Commands', '\`ping\` \`8ball\` \`coinflip\`')
+            .addField(':ping_pong: - Fun Commands', '\`ping\` \`roll\` \`8ball\` \`coinflip\`')
             .setColor(0x28D69F)
             .setThumbnail('https://i.imgur.com/041f3zv.png')
             message.channel.send(embed);
