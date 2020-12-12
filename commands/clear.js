@@ -18,14 +18,14 @@ module.exports = {
                 if (args[1] < 1) {
                     const embed = new Discord.MessageEmbed()
                     .setTitle('Valiuos - Clear - Error')
-                    .setDescription('You must delete at least 1 message')
+                    .setDescription('You must delete at least 1 message.')
                     .setColor(0x28D69F)
                     .setThumbnail('https://i.imgur.com/ry5hJqC.png')
                     message.channel.send(embed);
                 } else if (args[1] > 100) {
                     const embed = new Discord.MessageEmbed()
                     .setTitle('Valiuos - Clear - Error')
-                    .setDescription('You can not delete more than 100 messages at once due to a Discord API limitation')
+                    .setDescription('You can not delete more than 100 messages at once due to a Discord API limitation.')
                     .setColor(0x28D69F)
                     .setThumbnail('https://i.imgur.com/ry5hJqC.png')
                     message.channel.send(embed);
@@ -36,7 +36,7 @@ module.exports = {
                     
                     const embed = new Discord.MessageEmbed()
                     .setTitle('Valiuos - Clear')
-                    .setDescription(args[1] + ' messages have been deleted successfully')
+                    .setDescription(args[1] + ' messages have been deleted successfully.')
                     .setColor(0x28D69F)
                     .setFooter('Messages over 14 days old have not been deleted due to a Discord API limitation', 'https://i.imgur.com/ry5hJqC.png')
                     .setThumbnail('https://i.imgur.com/ry5hJqC.png')
