@@ -58,7 +58,7 @@ client.on('ready', () => {
     console.log(`Loaded ${files.length} commands`)
     console.log(`Successfully connected to ${client.guilds.cache.size} guilds`)
     console.log(`${client.user.tag} successfully logged in`);
-    client.user.setActivity(` plysm.cf | ${prefix}help`);
+    client.user.setActivity(` Start with ${prefix}help`);
 })
 
 client.login(process.env.CLIENT_TOKEN);
