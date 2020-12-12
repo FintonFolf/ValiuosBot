@@ -36,6 +36,15 @@ client.on('message', message => {
         case "kick":
             client.commands.get('kick').execute(message, args);
         break;
+        case "8ball":
+            client.commands.get('8ball').execute(message, args);
+        break;
+        case "roll":
+            client.commands.get('roll').execute(message, args);
+        break;
+        case "coinflip":
+            client.commands.get('coinflip').execute(message, args);
+        break;
     }
 })
 

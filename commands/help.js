@@ -10,9 +10,9 @@ module.exports = {
             const embed = new Discord.MessageEmbed()
             .setTitle('Valiuos - Help Command')
             .setDescription(`Use \`${prefix}help <command>\` to get help with a specific command`)
-            .addField(':jigsaw: - General Commands', `\`help\``)
+            .addField(':jigsaw: - General Commands',  '\`help\`')
             .addField(':tools: - Moderation Commands', '`\`clear\`` `\`kick\`` `\`ban\``')
-            .addField(':ping_pong: - Fun Commands', `\`ping\``)
+            .addField(':ping_pong: - Fun Commands', '\`ping\` \`8ball\` \`coinflip\`')
             .setColor(0x28D69F)
             .setThumbnail('https://i.imgur.com/041f3zv.png')
             message.channel.send(embed);
@@ -27,6 +27,36 @@ module.exports = {
                 .setColor(0x28D69F)
                 .setThumbnail('https://i.imgur.com/041f3zv.png')
                 message.channel.send(embedPing);
+            break;
+            case "roll":
+                const embedRoll = new Discord.MessageEmbed()
+                .setTitle('Valiuos - Help Command - Roll')
+                .setDescription(`**${prefix}roll**`)
+                .addField('Description', 'A command that returns an integer like a dice.')
+                .addField('Usage', `${prefix}roll`)
+                .setColor(0x28D69F)
+                .setThumbnail('https://i.imgur.com/041f3zv.png')
+                message.channel.send(embedRoll);
+            break;
+            case "8ball":
+                const embed8ball = new Discord.MessageEmbed()
+                .setTitle('Valiuos - Help Command - 8 Ball')
+                .setDescription(`**${prefix}8ball**`)
+                .addField('Description', 'A command that returns an answer like a magic eight ball.')
+                .addField('Usage', `${prefix}8ball <question>`)
+                .setColor(0x28D69F)
+                .setThumbnail('https://i.imgur.com/041f3zv.png')
+                message.channel.send(embed8ball);
+            break;
+            case "coinflip":
+                const embedCoinflip = new Discord.MessageEmbed()
+                .setTitle('Valiuos - Help Command - Coin Flip')
+                .setDescription(`**${prefix}coinflip**`)
+                .addField('Description', 'A command that returns either heads or tails.')
+                .addField('Usage', `${prefix}coinflip`)
+                .setColor(0x28D69F)
+                .setThumbnail('https://i.imgur.com/041f3zv.png')
+                message.channel.send(embedCoinflip);
             break;
             case "help":
                 const embedHelp = new Discord.MessageEmbed()
