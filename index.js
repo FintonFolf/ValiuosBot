@@ -9,7 +9,6 @@ const fs = require('fs');
 
 global.prefix = prefix;
 global.owner = owner;
-global.client = client;
 
 client.commands = new Discord.Collection();
 
@@ -52,7 +51,7 @@ client.on('message', message => {
             client.commands.get('shutdown').execute(client, message, args);
         break;
         case "guilds":
-            client.commands.get('guilds').execute(client, client, message, args);
+            client.commands.get('guilds').execute(client, message, args);
         break;
     }
 })
