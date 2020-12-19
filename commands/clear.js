@@ -6,10 +6,17 @@ module.exports = {
     description: 'clears the chat',
     async execute(client, message, args){
         if(message.member.permissions.has('MANAGE_MESSAGES')){
-            if(!args[1] || args[1] != parseInt(args[1])) {
+            if(!args[1]) {
                 const embed = new Discord.MessageEmbed()
                 .setTitle('Valiuos - Clear - Missing Integer')
                 .setDescription('You must specify the amount of messages you wish to remove.')
+                .setColor(0x28D69F)
+                .setThumbnail('https://i.imgur.com/ry5hJqC.png')
+                message.channel.send(embed);
+            } else if (args[1] != parseInt(args[1])) {
+                const embed = new Discord.MessageEmbed()
+                .setTitle('Valiuos - Clear - Invalid Integer')
+                .setDescription('The value you entered is not an integer.')
                 .setColor(0x28D69F)
                 .setThumbnail('https://i.imgur.com/ry5hJqC.png')
                 message.channel.send(embed);
