@@ -53,6 +53,12 @@ client.on('message', message => {
         case "guilds":
             client.commands.get('guilds').execute(client, message, args);
         break;
+        case "christmas":
+            client.commands.get('christmas').execute(client, message, args);
+        break;
+        case "xmas":
+            client.commands.get('christmas').execute(client, message, args);
+        break;
     }
 })
 

@@ -45,7 +45,7 @@ module.exports = {
                     .setTitle('Valiuos - Clear')
                     .setDescription(args[1] + ' messages have been deleted successfully.')
                     .setColor(0x28D69F)
-                    .setFooter('Messages over 14 days old have not been deleted due to a Discord API limitation', 'https://i.imgur.com/ry5hJqC.png')
+                    .setFooter('Messages over 14 days old have not been deleted due to a Discord API limitation', 'https://i.imgur.com/041f3zv.png')
                     .setThumbnail('https://i.imgur.com/ry5hJqC.png')
                     message.channel.send(embed);
                 }
