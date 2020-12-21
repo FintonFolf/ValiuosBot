@@ -49,7 +49,6 @@ module.exports = {
                     .setThumbnail('https://i.imgur.com/ry5hJqC.png')
                     message.channel.send(embed);
                 }
-
             }
         } else {
             const embed = new Discord.MessageEmbed()

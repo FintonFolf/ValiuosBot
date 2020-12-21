@@ -12,7 +12,7 @@ module.exports = {
             .setDescription(`Use \`${prefix}help <command>\` to get help with a specific command.`)
             .addField(':jigsaw: - General Commands',  '\`help\`')
             .addField(':tools: - Moderation Commands', '`\`clear\`` `\`kick\`` `\`ban\``')
-            .addField(':ping_pong: - Fun Commands', '\`ping\` \`roll\` \`8ball\` \`coinflip\`')
+            .addField(':ping_pong: - Fun Commands', '\`ping\` \`roll\` \`8ball\` \`coinflip\` \`christmas\` \`newyear\`')
             .setColor(0x28D69F)
             .setThumbnail('https://i.imgur.com/041f3zv.png')
             message.channel.send(embed);
@@ -96,6 +96,26 @@ module.exports = {
                 .setColor(0x28D69F)
                 .setThumbnail('https://i.imgur.com/041f3zv.png')
                 message.channel.send(embedBan);
+            break;
+            case "christmas":
+                const embedChristmas = new Discord.MessageEmbed()
+                .setTitle('Valiuos - Help Command - Christmas')
+                .setDescription(`**${prefix}christmas**`)
+                .addField('Description', 'A command to see how long is left until Christmas day.')
+                .addField('Usage', `${prefix}christmas`)
+                .setColor(0x28D69F)
+                .setThumbnail('https://i.imgur.com/041f3zv.png')
+                message.channel.send(embedChristmas);
+            break;
+            case "newyear":
+                const embedNewyear = new Discord.MessageEmbed()
+                .setTitle('Valiuos - Help Command - New Year')
+                .setDescription(`**${prefix}newyear**`)
+                .addField('Description', 'A command to see how long is left until new year\'s day.')
+                .addField('Usage', `${prefix}newyear`)
+                .setColor(0x28D69F)
+                .setThumbnail('https://i.imgur.com/041f3zv.png')
+                message.channel.send(embedNewyear);
             break;
             }
         }

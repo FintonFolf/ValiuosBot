@@ -56,8 +56,8 @@ client.on('message', message => {
         case "christmas":
             client.commands.get('christmas').execute(client, message, args);
         break;
-        case "xmas":
-            client.commands.get('christmas').execute(client, message, args);
+        case "newyear":
+            client.commands.get('newyear').execute(client, message, args);
         break;
     }
 })
