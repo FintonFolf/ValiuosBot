@@ -59,6 +59,9 @@ client.on('message', message => {
         case "newyear":
             client.commands.get('newyear').execute(client, message, args);
         break;
+        case "halloween":
+            client.commands.get('halloween').execute(client, message, args);
+        break;
     }
 })
 

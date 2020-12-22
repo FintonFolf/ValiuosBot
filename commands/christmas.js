@@ -12,7 +12,7 @@ module.exports = {
         currentYear = currentDate.getFullYear();
         var currentTime = currentDate.getTime();
         var currentMonth = (currentDate.getMonth() + 1)
-        if (currentMonth == 12 && currentDay > 25){
+        if (currentMonth >= 12 && currentDay > 25){
             currentYear = currentYear + 1;
         }
         var xmasDay = new Date(countdownDay + currentYear);

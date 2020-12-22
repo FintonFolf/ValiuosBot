@@ -12,7 +12,7 @@ module.exports = {
             .setDescription(`Use \`${prefix}help <command>\` to get help with a specific command.`)
             .addField(':jigsaw: - General Commands',  '\`help\`')
             .addField(':tools: - Moderation Commands', '`\`clear\`` `\`kick\`` `\`ban\``')
-            .addField(':ping_pong: - Fun Commands', '\`ping\` \`roll\` \`8ball\` \`coinflip\` \`christmas\` \`newyear\`')
+            .addField(':ping_pong: - Fun Commands', '\`ping\` \`roll\` \`8ball\` \`coinflip\` \`christmas\` \`newyear\` \`halloween\`')
             .setColor(0x28D69F)
             .setThumbnail('https://i.imgur.com/041f3zv.png')
             message.channel.send(embed);
@@ -116,6 +116,16 @@ module.exports = {
                 .setColor(0x28D69F)
                 .setThumbnail('https://i.imgur.com/041f3zv.png')
                 message.channel.send(embedNewyear);
+            break;
+            case "halloween":
+                const embedHalloween = new Discord.MessageEmbed()
+                .setTitle('Valiuos - Help Command - Halloween')
+                .setDescription(`**${prefix}halloween**`)
+                .addField('Description', 'A command to see how long is left until Halloween.')
+                .addField('Usage', `${prefix}halloween`)
+                .setColor(0x28D69F)
+                .setThumbnail('https://i.imgur.com/041f3zv.png')
+                message.channel.send(embedHalloween);
             break;
             }
         }
