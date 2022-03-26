@@ -75,7 +75,7 @@ client.on('ready', () => {
     console.log(`Loaded ${files.length} commands`)
     console.log(`Successfully connected to ${client.guilds.cache.size} guilds`)
     console.log(`${client.user.tag} successfully logged in`);
-    client.user.setActivity(` Start with ${prefix}help`);
+    client.user.setActivity(` Valiuos will sunset on April 1st 2022`);
 })
 
 client.login(process.env.CLIENT_TOKEN);
